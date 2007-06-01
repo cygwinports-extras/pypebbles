@@ -1,0 +1,26 @@
+inherit python
+
+DESCRIPTION="Pygame Jeweled clone"
+HOMEPAGE="http://pypebbles.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+src_compile() { :; }
+src_test() { :; }
+
+src_install() {
+	local pkgdatadir=/usr/share/${PN}
+
+	cd ${S}
+	insinto ${pkgdatadir}
+	doins pypebbles.py
+
+	insinto ${pkgdatadir}/data
+	doins data/*
+
+	cat > ${T}/pypebbles <<-_EOF
+	#!/bin/sh
+	exec python ${pkgdatadir}/pypebbles.py
+	_EOF
+
+	dobin ${T}/pypebbles
+}

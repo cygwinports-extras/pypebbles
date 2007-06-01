@@ -1,0 +1,65 @@
+pypebbles
+-------------------------------------------
+A board is filled with stones of different colors. Your goal is to make 
+lines of stones of the same color. Two neighbouring stones can swap 
+places, but only if a line of three or more stones is formed that way. 
+Those lines will then disappear, letting other stones fall down. You 
+score points for every line that disappears. It's that simple!
+
+Runtime requirements:
+  python-2.5.1-1
+  python-pygame-1.7.1-2
+
+Canonical homepage:
+  http://pypebbles.sourceforge.net/
+
+Canonical download:
+  http://downloads.sourceforge.net/pypebbles/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pypebbles-0.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pypebbles-0.1-X.cygport all
+
+This will create:
+  /usr/src/pypebbles-0.1-X-src.tar.bz2
+  /usr/src/pypebbles-0.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/pypebbles
+  /usr/share/doc/Cygwin/pypebbles-0.1.README
+  /usr/share/doc/pypebbles-0.1/COPYING
+  /usr/share/pypebbles/data/bluedot.png
+  /usr/share/pypebbles/data/board.png
+  /usr/share/pypebbles/data/gameover.png
+  /usr/share/pypebbles/data/greendot.png
+  /usr/share/pypebbles/data/lightbluedot.png
+  /usr/share/pypebbles/data/orangedot.png
+  /usr/share/pypebbles/data/purpledot.png
+  /usr/share/pypebbles/data/reddot.png
+  /usr/share/pypebbles/data/selection.png
+  /usr/share/pypebbles/data/yellowdot.png
+  /usr/share/pypebbles/pypebbles.py
+  /usr/share/pypebbles/pypebbles.pyc
+  /usr/share/pypebbles/pypebbles.pyo
+
+------------------
+
+Port Notes:
+
+----- version 0.1-2 -----
+Rebuilt for python-2.5.
+
+----- version 0.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
