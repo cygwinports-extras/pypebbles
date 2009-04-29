@@ -7,8 +7,8 @@ Those lines will then disappear, letting other stones fall down. You
 score points for every line that disappears. It's that simple!
 
 Runtime requirements:
-  python-2.5.1-1
-  python-pygame-1.7.1-2
+  python-2.5.4-10
+  python-pygame-1.8.1-10
 
 Canonical homepage:
   http://pypebbles.sourceforge.net/
@@ -34,8 +34,9 @@ This will create:
 Files included in the binary package:
 
   /usr/bin/pypebbles
-  /usr/share/doc/Cygwin/pypebbles-0.1.README
-  /usr/share/doc/pypebbles-0.1/COPYING
+  /usr/share/applications/pypebbles.desktop
+  /usr/share/doc/pypebbles/COPYING
+  /usr/share/pixmaps/pypebbles.png
   /usr/share/pypebbles/data/bluedot.png
   /usr/share/pypebbles/data/board.png
   /usr/share/pypebbles/data/gameover.png
@@ -46,19 +47,13 @@ Files included in the binary package:
   /usr/share/pypebbles/data/reddot.png
   /usr/share/pypebbles/data/selection.png
   /usr/share/pypebbles/data/yellowdot.png
-  /usr/share/pypebbles/pypebbles.py
-  /usr/share/pypebbles/pypebbles.pyc
-  /usr/share/pypebbles/pypebbles.pyo
 
 ------------------
 
 Port Notes:
 
------ version 0.1-2 -----
-Rebuilt for python-2.5.
-
------ version 0.1-1 -----
-Initial release for Cygwin.
+----- version 0.1-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
