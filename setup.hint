@@ -1,8 +1,0 @@
-category: Games
-requires: python python-pygame
-sdesc: "Jeweled clone with colored stones"
-ldesc: "A board is filled with stones of different colors. Your goal is 
-to make lines of stones of the same color. Two neighbouring stones can 
-swap places, but only if a line of three or more stones is formed that 
-way.  Those lines will then disappear, letting other stones fall down. 
-You score points for every line that disappears. It's that simple!"

@@ -1,0 +1,31 @@
+inherit python
+
+NAME="pypebbles"
+VERSION=0.1
+RELEASE=10
+CATEGORY="Games"
+SUMMARY="Jeweled clone with colored stones"
+DESCRIPTION="A board is filled with stones of different colors. Your goal is
+to make lines of stones of the same color. Two neighbouring stones can swap
+places, but only if a line of three or more stones is formed that way.  Those
+lines will then disappear, letting other stones fall down. You score points for
+every line that disappears. It's that simple!"
+HOMEPAGE="http://pypebbles.sourceforge.net/"
+SRC_URI="mirror://sourceforge/pypebbles/pypebbles-${VERSION}.tar.gz"
+PATCH_URI="0.1-datadir.patch"
+
+ARCH=noarch
+
+src_compile() { :; }
+src_test() { :; }
+
+src_install() {
+	cd ${S}
+	newbin pypebbles.py pypebbles
+
+	insinto /usr/share/pypebbles/data
+	doins data/*
+
+	newicon data/bluedot.png pypebbles.png
+	make_desktop_entry pypebbles PyPebbles pypebbles "Game;BlocksGame"
+}
